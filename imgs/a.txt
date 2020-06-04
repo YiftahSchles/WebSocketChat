@@ -1,0 +1,1 @@
+There has to be an imgs directory even if it's empty. It's used for storing the images sent in the chat.
