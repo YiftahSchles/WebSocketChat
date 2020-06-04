@@ -1,0 +1,1 @@
+there has to be an imgs directory in the servre, even if it's empty
