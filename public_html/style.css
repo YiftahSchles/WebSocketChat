@@ -1,0 +1,46 @@
+div.screen {
+  background-color: #eeeeee;
+  text-align: center;
+  display: inline-block;
+}
+
+div.login {
+  margin: 250px 70px;
+  /*-ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50*/
+}
+
+input, button {
+  font-family: verdana;
+  font-size: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+div.chat {
+  background-color: #f0f7ff;
+  font-size: 18px;
+  margin: 15px;
+  width: 300px;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+input.msg {
+  text-align: left;
+}
+
+button.send {
+  height: 100%;
+}
+
+div.hidden {
+  display: none;
+}
+
+.chat {
+  text-align: left;
+  padding: 20px;
+}

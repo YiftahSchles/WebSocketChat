@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--WebSocket based chat -->
+<!--Author: Yiftah Schlesinger, 11th grade cyber class, Handesaim Highschool Herzliya 2020 -->
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="turbolinks-cache-control" content="no-cache">
+  <title>Chat</title>
+  <script type="text/javascript" src="ws_functions.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="screen">
+    <div class="login" id="loginScreen">
+      <input type="text" id="username" name="username" placeholder="Username"><br>
+      <button onclick="try_login()">Login</button>
+    </div>
+    <div class="container hidden" id="chatScreen">
+      <div class="chat" id="chat">
+      </div>
+      <div class="type">
+        <input type="text" id="msg_input" name='msg' class='msg' onchange="this.value = this.value.replace(/[^A-Za-z]/ig, '');">
+        <button class="send" onclick="send_msg()">Send</button>
+        <button class="send" onclick="document.getElementById('imgFile').click();" style="padding: 5px; position: relative; top: 5px;">
+          <img src="image.webp" width="25px" height="25px"
+          alt="img" title="Upload Image"></button>
+      </div>
+    </div>
+  </div>
+  <input type="file" id="imgFile" accept="image/x-png,image/jpeg,image/gif" style="display: none;" onchange="upload_img()">
+</body>
+
+</html>
