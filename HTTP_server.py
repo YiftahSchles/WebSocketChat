@@ -96,3 +96,5 @@ def close_http_server():
     global http_server, running
     running = False
     http_server.close()
+    for filename in os.listdir('imgs'):
+        os.remove('imgs/' + filename)
